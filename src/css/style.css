@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+body {
+    background-image: url(../img/personagem-monkey-d-luffy.png);
+    background-size: cover;
+    background-position: 25% 90%;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin-left: 100px;
+}
+
+.conteudo {
+    color: #fff;
+    margin-bottom: 100px;
+    padding: 10px;
+    max-width: 450px;
+}
+
+.conteudo img{
+    width: 250px;
+}
+
+.conteudo h2{
+    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.conteudo p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.selecao {
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background-color: #0000004f;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    margin-bottom: 20px;
+}
+
+li img{
+    opacity: 0.8;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+li img:hover {
+    opacity: 1;
+    scale: 1.1;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.active img{
+    opacity: 1;
+    scale: 1.1;
+    transition: .4s;
+}
+
+li button {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+li button:hover {
+    scale: 1.2;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.active button {
+    border: 1px solid #fff;
+    scale: 1.2;
+    transition: .4s;
+}
+
+@media (max-width: 800px) {
+    body {
+        height: auto;
+        background-position: center;
+
+        overflow: scroll;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    main {
+        margin: auto;
+        padding: 20px;
+    }
+
+    .conteudo h2 {
+        font-size: 2rem;
+    }
+
+    .conteudo p {
+        font-size: 15px;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #00000041;
+    }
+
+    .selecao {
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .selecao ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .selecao li {
+        margin-left: 1rem;
+    }
+
+}
