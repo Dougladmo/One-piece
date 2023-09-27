@@ -136,6 +136,8 @@ li button:hover {
         height: auto;
         width: 100vw;
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: row;
     }
 
