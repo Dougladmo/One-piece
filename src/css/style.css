@@ -5,10 +5,30 @@
     font-family: 'Rubik';
 }
 
+:root {
+    --bg-url: url(../img/personagem-monkey-d-luffy.png)
+}
+
+.zoro {
+    --bg-url: url(../img/personagem-roronoa-zoro.png)
+}
+
+.nami {
+    --bg-url: url(../img/personagem-nami.png)
+}
+
+.sanji {
+    --bg-url: url(../img/personagem-sanji.png)
+}
+
+.chopper {
+    --bg-url: url(../img/personagem-tony-chopper.png)
+}
+
 body {
-    background-image: url(../img/personagem-monkey-d-luffy.png);
+    background-image: var(--bg-url);
     background-size: cover;
-    background-position: 25% 90%;
+    background-position: 25% 60%;
     background-repeat: no-repeat;
 
     height: 100vh;
